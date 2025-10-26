@@ -1,17 +1,18 @@
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
+import React from 'react';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import Services from './components/Services.jsx';
+import Footer from './components/Footer.jsx';
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-white text-slate-900">
-      <Hero />
-      <Services />
-      <About />
-      <Contact />
+    <div className="min-h-screen bg-white text-slate-900">
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+      </main>
+      <Footer />
     </div>
   );
 }
-
-export default App;
